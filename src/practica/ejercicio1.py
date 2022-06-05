@@ -10,7 +10,7 @@ y False cuando no lo sea, sin utilizar módulo. (%)
 """
 
 
-def es_par(numero: int):
+def es_par(numero: int) -> bool:
     """
     Verifica que un numero (int) sea par (devuelve True) o impar (devuelve
     False), sin utilizar el operador %.
@@ -22,11 +22,11 @@ def es_par(numero: int):
     assert type(numero) == int, "No es un numero entero (int)."
 
     # Declaro (y también defino momentáneamente) el resultado a devolver.
-    resultado = False
+    resultado: bool = False
 
     # 'aux' es igual al módulo de 'numero' para no tener que hacer el caso
     # especial en el que el 'numero' ingresado sea un número negativo.
-    aux = abs(numero)
+    aux: int = abs(numero)
 
     # En este bucle se le restan dos unidades (-2) a la variable 'aux' para que
     # en algún momento llegue al -2 (de esta forma incluye al caso en el que

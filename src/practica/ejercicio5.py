@@ -180,6 +180,7 @@ def principal():
     
     entrada: str = input()
     
+    # Salida:
     print(f"¿Está balanceado? {hay_balanceo_corchetes(entrada)}")
 
 

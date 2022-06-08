@@ -8,7 +8,7 @@ from practica.ejercicio1 import es_par
 """
 Tests del Ejercicio 1: Pares e impares.
 
-Casos de prueba:
+Casos de prueba (5):
 -> Función es_par(numero: int) -> bool:
     - numero < 0, par
     - numero > 0, par

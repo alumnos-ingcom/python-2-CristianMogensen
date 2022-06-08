@@ -101,10 +101,64 @@ def principal():
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    l1 = ['H','o','l','a',' ','a','b','c','d']
-    l2 = ['','o','l', 'a', ' ','c','b','a','d']
-    print(contar_superposiciones(l1,l2))
-    print(encontrar_inicio_superposicion(l1,l2))
+    
+    # Imprimo título:
+    print("Ejercicio 3:\tSúper-puestos")
+    
+    # Input:
+    print("Ingrese primera lista:")
+    print("Cada elemento debe tener 1 caracter.")
+    print("(presione Enter para terminarla)")
+    
+    # Declaro las listas a comparar
+    lista1: list = []
+    lista2: list = []
+    
+    # Declaro la variable en la que se guardará el input.
+    entrada: str = None
+    
+    # Se realiza el input hasta que el usuario presione enter sin ingresar
+    # ningún caracter.
+    while (entrada != ''):
+        
+        entrada = input()
+        
+        # Verifico que sea de 1 caracter.
+        if (len(entrada) == 1):
+            
+            # Agrego la entrada a la lista correspondiente.
+            lista1.append(entrada)
+            
+        elif (len(entrada) > 1):
+            
+            print("Debe ingresar 1 solo caracter.")
+
+    print("Ingrese segunda lista:")
+    print("Cada elemento debe tener 1 caracter.")
+    print("(presione Enter para terminarla)")
+
+    entrada = None
+
+    while (entrada != ''):
+        
+        entrada = input()
+        
+        # Verifico que sea de 1 caracter.
+        if (len(entrada) == 1):
+            
+            # Agrego la entrada a la lista correspondiente.
+            lista2.append(entrada)
+            
+        elif (len(entrada) > 1):
+            
+            print("Debe ingresar 1 solo caracter.")
+            
+    # Salida:
+    print("Las listas ingresadas son:")
+    print(lista1)
+    print(lista2)
+    print(f"La cantidad de superposiciones es: {contar_superposiciones(lista1,lista2)}")
+    print(f"La superposición comienza en el elemento: {encontrar_inicio_superposicion(lista1,lista2)}")
 
 
 if __name__ == "__main__":

@@ -22,12 +22,13 @@ def fibonacci(termino: int):
     PRECONDICIONES: Recibe un número entero ('termino').
     POSCONDICIONES: Devuelve un número entero.
     """
+
     # Verifico que el número ingresado sea mayor que cero.
     assert (termino > 0), "El argumento debe ser mayor a cero."
-    
+
     # Verifico que el número ingresado sea de tipo entero.
     assert (isinstance(termino, int)), "El argumento debe ser de tipo int."
-    
+
     # Defino los términos primeros.
     if (termino == 1 or termino == 2):
 
@@ -49,15 +50,21 @@ def principal():
 
     # Imprimo título:
     print("Ejercicio 4:\tFibonacci")
-    
+
     # Input:
-    print("Ingrese el número de término a imprimir de la sucesión de Fibonacci:")
-    
+    # Utilizo variables para cumplir con el formato de pycodestyle.
+    str_input: str = "Ingrese el número de término a imprimir de la "
+    str_input += "sucesión de Fibonacci:"
+    print(str_input)
+
     # Declaro la variable de entrada.
     entrada: int = int(input())
-    
+
     # Salida:
-    print(f"El término {entrada} de la sucesión de Fibonacci es: {fibonacci(entrada)}.")
+    # Utilizo variables para cumplir con el formato de pycodestyle.
+    output: str = f"El término {entrada} de la sucesión de Fibonacci "
+    output += f"es: {fibonacci(entrada)}."
+    print(output)
 
 
 if __name__ == "__main__":

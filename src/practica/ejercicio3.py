@@ -37,6 +37,7 @@ def contar_superposiciones(lista1: list, lista2: list):
     PRECONDICIONES: Recibe 2 listas para comparar.
     POSCONDICIONES: Devuelve un número entero.
     """
+
     # Declaro y defino la variable en la que se cuenten la cantidad de
     # elementos superpuestos en ambas listas.
     superposiciones: int = 0

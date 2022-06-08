@@ -473,16 +473,17 @@ def principal():
     (La entrada, la llamada al algoritmo y la salida)
     """
     
-    texto: str = str(input("texto: "))
+    # Imprimo título:
+    print("Ejercicio 5:\tEl Cifrado del Cesar")
+    
+    # Input:
+    texto: str = str(input("Ingrese texto a codificar: "))
     codificado: str = codificar_cifrado(texto,13)
     
-    print(f"Sin codificar: {texto}\n")
-    
-    print(f"Codificado: {codificado}\n")
-    
-    print(f"Decodificado: {decodificar_cifrado(codificado,13)}")
-    
-    
+    # Salida
+    print(f"\nTexto ingresado: {texto}\n")
+    print(f"Texto codificado: {codificado}\n")
+    print(f"Texto decodificado: {decodificar_cifrado(codificado,13)}")
 
 
 if __name__ == "__main__":

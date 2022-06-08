@@ -35,6 +35,7 @@ def fibonacci(termino: int):
 
     # Defino el caso general.
     else:
+
         # La sucesión evaluada en un termino N, resulta en la suma
         # de sus dos términos anteriores (N-1 y N-2).
         return fibonacci(termino - 1) + fibonacci(termino - 2)
@@ -45,7 +46,18 @@ def principal():
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    print(fibonacci(int(input())))
+
+    # Imprimo título:
+    print("Ejercicio 4:\tFibonacci")
+    
+    # Input:
+    print("Ingrese el número de término a imprimir de la sucesión de Fibonacci:")
+    
+    # Declaro la variable de entrada.
+    entrada: int = int(input())
+    
+    # Salida:
+    print(f"El término {entrada} de la sucesión de Fibonacci es: {fibonacci(entrada)}.")
 
 
 if __name__ == "__main__":

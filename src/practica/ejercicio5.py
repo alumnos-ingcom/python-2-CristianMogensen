@@ -171,8 +171,16 @@ def principal():
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    texto = input()
-    print(hay_balanceo_simultaneo(texto))
+    
+    # Imprimo título:
+    print("Ejercicio 5:\tCorchetes balanceados")
+    
+    # Input:
+    print("Ingrese texto para verificar que los corchetes estén balanceados:")
+    
+    entrada: str = input()
+    
+    print(f"¿Está balanceado? {hay_balanceo_corchetes(entrada)}")
 
 
 if __name__ == "__main__":

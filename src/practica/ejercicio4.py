@@ -14,7 +14,7 @@ sucesión de Fibonacci. Siendo este número un entero positivo mayor a 2.
 """
 
 
-def fibonacci(termino: int):
+def fibonacci(termino: int) -> int:
     """
     Calcula la sucesión de fibonacci hasta el termino indicado de
     tipo entero positivo (int > 0). Retorna el número entero con la

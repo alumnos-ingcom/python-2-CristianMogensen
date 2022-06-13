@@ -59,7 +59,7 @@ def principal():
     print("Ejercicio 1:\tPares e impares")
 
     # Input:
-    num = int(input("Ingrese número: "))
+    num: int = int(input("Ingrese número: "))
 
     # Algoritmo y salida:
     if (es_par(num)):

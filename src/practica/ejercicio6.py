@@ -31,7 +31,7 @@ Tip: Implementar las funciones utilizando las funciones ord y chr.
 """
 
 
-def ajustar_a_rango(numero: int, pasos: int, num1: int, num2: int):
+def ajustar_a_rango(numero: int, pasos: int, num1: int, num2: int) -> int:
     """
     Esta función verifica que un número (int) se encuentre dentro del
     rango ['num1', 'num2'] (ambos int's) y retorna un número entero
@@ -73,7 +73,7 @@ def ajustar_a_rango(numero: int, pasos: int, num1: int, num2: int):
     # Declaro y defino una variable en la que se verificará que ya
     # se haya sumado, al menos una vez, la cantidad de 'pasos' al
     # 'numero'.
-    sumado = False
+    sumado: bool = False
 
     # Mientras no se haya sumado la cantidad de pasos especificada
     # al menos una vez y el número no esté dentro del rango deseado
@@ -201,7 +201,7 @@ def codificar_cifrado(texto: str,
 
     # Declaro y defino la variable que servirá como contador para los
     # elementos de la lista.
-    elemento = 0
+    elemento: int = 0
 
     # En el bucle se le agrega a la lista 'AZ_lista' cada letra
     # MAYÚSCULA del abecedario.
@@ -369,7 +369,7 @@ def decodificar_cifrado(texto_cifrado: str,
 
     # Declaro y defino la variable que servirá como contador para los
     # elementos de la lista.
-    elemento = 0
+    elemento: int = 0
 
     # En el bucle se le agrega a la lista 'AZ_lista' cada letra
     # MAYÚSCULA del abecedario.

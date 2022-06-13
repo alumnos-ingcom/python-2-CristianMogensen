@@ -29,7 +29,7 @@ inicio de la superposición.
 from ejercicio2 import encontrar_menor
 
 
-def contar_superposiciones(lista1: list, lista2: list):
+def contar_superposiciones(lista1: list, lista2: list) -> int:
     """
     Busca las coincidencias simultáneas entre 2 listas ('lista1' y 'lista2')
     y retorna un número entero que indica el grado de superposición (0: no hay
@@ -63,7 +63,7 @@ def contar_superposiciones(lista1: list, lista2: list):
     return superposiciones
 
 
-def encontrar_inicio_superposicion(lista1: list, lista2: list):
+def encontrar_inicio_superposicion(lista1: list, lista2: list) -> int:
     """
     Busca la primer coincidencia simultáneas entre 2 listas ('lista1' y
     'lista2') y retorna un número entero que indica el la posición en las

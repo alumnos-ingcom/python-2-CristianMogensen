@@ -494,7 +494,10 @@ def principal():
 
     # Input:
     texto: str = str(input("Ingrese texto a codificar: "))
-    codificado: str = codificar_cifrado(texto, 13)
+    
+    rotaciones: int = int(input("Ingrese cantidad de rotaciones: "))
+    
+    codificado: str = codificar_cifrado(texto, rotaciones)
 
     # Salida
     print(f"\nTexto ingresado: {texto}\n")

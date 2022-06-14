@@ -26,8 +26,10 @@ inicio de la superposición.
 # utilizarla en la funcion de contar_superposiciones (también en la función
 # extra encontrar_inicio_superposicion). Se utiliza de manera
 # tal que ayuda a indicar cuál es el tamaño más chico de las dos listas.
-from ejercicio2 import encontrar_menor
-
+try:
+    from ejercicio2 import encontrar_menor
+except ImportError as exc:
+    from practica.ejercicio2 import encontrar_menor
 
 def contar_superposiciones(lista1: list, lista2: list) -> int:
     """

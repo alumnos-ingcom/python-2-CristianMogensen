@@ -11,7 +11,7 @@ from practica.ejercicio5 import hay_balanceo_simultaneo
 Tests del Ejercicio 5: Corchetes balanceados.
 
 Se buscan testear 7 casos de prueba para la función hay_balanceo_corchetes,
-7 para la función hay_balanceo_especifico y N para la función
+7 para la función hay_balanceo_especifico y 2 para la función
 hay_balanceo_simultaneo:
 
 hay_balanceo_corchetes(texto: str):
